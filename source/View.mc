@@ -45,11 +45,13 @@ class View extends Ui.WatchFace {
     var canvas_tall = false;
     var canvas_r240 = false;
     var set_theme = 0;
+    var set_leading_zero = true;
 
     // flag vars
     var b_flag = null;
     var segment_width = 19;
     var segment_height = 100;
+    var flag=[10,9,8,7,5,2,0,-3,-5,-8,-9,-10,-10,-10,-9,-8,-6,-3,-1,2,5,7,8,9,10];
 
     // data
     var field;
@@ -277,12 +279,12 @@ class View extends Ui.WatchFace {
       var offset_y = -12+(dh-segment_height)/2;
 
       // pre-calculated sine wave
-      var flag=[10,9,8,7,5,2,0,-3,-5,-8,-9,-10,-10,-10,-9,-8,-6,-3,-1,2,5,7,8,9,10];
       var flag_size = flag.size();
+      var flag_offset = 7;
 
       // let's draw each buffered bitmap at each position
       for (var i=0; i<10;i++) {
-        dc.drawBitmap(offset_x+(segment_width*i), offset_y+(flag[(i+current_frame)%flag_size]), buffers[i]);
+        dc.drawBitmap(offset_x+(segment_width*i), offset_y+(flag[(flag_offset+i+current_frame)%flag_size]), buffers[i]);
       }
 
       // draw the field, steps
@@ -299,6 +301,7 @@ class View extends Ui.WatchFace {
       dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
       dc.drawText(f_start+f_hour, 150+11, f_time_light, minute.toString(), Gfx.TEXT_JUSTIFY_LEFT);
 
+      current_frame++;
 
     }
 
@@ -314,8 +317,6 @@ class View extends Ui.WatchFace {
 
     // this is our animation loop callback
     function callback1() {
-
-      current_frame++;
 
       // redraw the screen
       Ui.requestUpdate();
