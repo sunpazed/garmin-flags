@@ -1,0 +1,14 @@
+info face="Korolev Condensed" size=60 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=2,2
+common lineHeight=76 base=59 scaleW=248 scaleH=449 pages=1 packed=0
+page id=0 file="korolev-60-med.png"
+chars count=10
+char id=48     x=141   y=113   width=24    height=45    xoffset=3     yoffset=15    xadvance=29    page=0  chnl=0
+char id=49     x=69    y=301   width=11    height=44    xoffset=2     yoffset=15    xadvance=15    page=0  chnl=0
+char id=50     x=86    y=209   width=24    height=44    xoffset=3     yoffset=15    xadvance=28    page=0  chnl=0
+char id=51     x=87    y=113   width=25    height=45    xoffset=2     yoffset=15    xadvance=28    page=0  chnl=0
+char id=52     x=31    y=209   width=26    height=44    xoffset=2     yoffset=15    xadvance=29    page=0  chnl=0
+char id=53     x=112   y=209   width=24    height=44    xoffset=3     yoffset=16    xadvance=28    page=0  chnl=0
+char id=54     x=138   y=209   width=24    height=44    xoffset=3     yoffset=16    xadvance=28    page=0  chnl=0
+char id=55     x=205   y=255   width=22    height=44    xoffset=3     yoffset=15    xadvance=25    page=0  chnl=0
+char id=56     x=114   y=113   width=25    height=45    xoffset=3     yoffset=15    xadvance=28    page=0  chnl=0
+char id=57     x=164   y=209   width=24    height=44    xoffset=3     yoffset=15    xadvance=28    page=0  chnl=0

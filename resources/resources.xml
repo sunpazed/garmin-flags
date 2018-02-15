@@ -1,0 +1,18 @@
+<resources>
+
+    <drawables>
+      <bitmap id="LauncherIcon" filename="bitmaps/launcher_icon.png" />
+      <bitmap id="usa" filename="bitmaps/flag-usa.png" />
+      <bitmap id="australia" filename="bitmaps/flag-australia.png" />
+      <bitmap id="uk" filename="bitmaps/flag-uk.png" />
+      <bitmap id="japan" filename="bitmaps/flag-japan.png" />
+      <bitmap id="southafrica" filename="bitmaps/flag-sa.png" />
+      <bitmap id="czech" filename="bitmaps/flag-cz.png" />
+    </drawables>
+
+    <fonts>
+      <font id="time_bold" filename="fonts/korolev-60-med.fnt" antialias="true"/>
+      <font id="time_light" filename="fonts/korolev-60-light.fnt" antialias="true"/>
+    </fonts>
+
+</resources>

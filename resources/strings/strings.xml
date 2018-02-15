@@ -1,0 +1,15 @@
+<strings>
+
+  <string id="AppName">Flags</string>
+
+  <string id="ThemeTitle">Theme</string>
+  <string id="ThemePrompt">Select the flag theme</string>
+
+  <string id="THEME_AU">Australia</string>
+  <string id="THEME_CZ">Czech</string>
+  <string id="THEME_JP">Japan</string>
+  <string id="THEME_SA">South Africa</string>
+  <string id="THEME_UK">United Kingdom</string>
+  <string id="THEME_US">United States</string>
+
+</strings>
