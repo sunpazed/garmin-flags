@@ -44,20 +44,26 @@ class View extends Ui.WatchFace {
     var canvas_semicirc = false;
     var canvas_tall = false;
     var canvas_r240 = false;
+    var offset_field = 18;
+    var offset_time = 150;
+    var offset_flag = 12;
     var set_theme = 0;
     var set_leading_zero = true;
 
     // flag vars
     var b_flag = null;
-    var segment_width = 19;
-    var segment_height = 100;
-    var flag=[10,9,8,7,5,2,0,-3,-5,-8,-9,-10,-10,-10,-9,-8,-6,-3,-1,2,5,7,8,9,10];
+    const segment_width = 10;
+    const segment_height = 100;
+    const flag=[10,9,8,7,5,2,0,-3,-5,-8,-9,-10,-10,-10,-9,-8,-6,-3,-1,2,5,7,8,9,10];
 
     // data
     var field;
     var fieldGoal;
     var fieldProgress;
+
+    // buffers
     var buffers = [];
+    var number_of_buffers = 19;
 
     // fonts
     var f_time_bold = false;
@@ -105,6 +111,9 @@ class View extends Ui.WatchFace {
       if (canvas_circ) {
         if (canvas_r240) {
         } else {
+          offset_field = 9;
+          offset_time = 136;
+          offset_flag = 16;
         }
       }
       if (canvas_semicirc) {
@@ -115,36 +124,192 @@ class View extends Ui.WatchFace {
       f_time_bold = Ui.loadResource(Rez.Fonts.time_bold);
 
       // load the flag
-      set_theme = readKeyInt(App.getApp(),"theme",5);
+      set_theme = readKeyInt(App.getApp(),"theme",99);
 
       switch (set_theme) {
 
+        // load case Argentina AR
         case 0:
-        b_flag = Ui.loadResource(Rez.Drawables.australia);
+        b_flag = Ui.loadResource(Rez.Drawables.ar);
         break;
 
+        // load case Canada CA
         case 1:
-        b_flag = Ui.loadResource(Rez.Drawables.czech);
+        b_flag = Ui.loadResource(Rez.Drawables.ca);
         break;
 
+        // load case France FR
         case 2:
-        b_flag = Ui.loadResource(Rez.Drawables.japan);
+        b_flag = Ui.loadResource(Rez.Drawables.fr);
         break;
 
+        // load case Italy IT
         case 3:
-        b_flag = Ui.loadResource(Rez.Drawables.southafrica);
+        b_flag = Ui.loadResource(Rez.Drawables.it);
         break;
 
+        // load case Netherlands NL
         case 4:
+        b_flag = Ui.loadResource(Rez.Drawables.nl);
+        break;
+
+        // load case Russia RU
+        case 5:
+        b_flag = Ui.loadResource(Rez.Drawables.ru);
+        break;
+
+        // load case Thailand TH
+        case 6:
+        b_flag = Ui.loadResource(Rez.Drawables.th);
+        break;
+
+        // load case Australia AU
+        case 7:
+        b_flag = Ui.loadResource(Rez.Drawables.au);
+        break;
+
+        // load case Switzerland CH
+        case 8:
+        b_flag = Ui.loadResource(Rez.Drawables.ch);
+        break;
+
+        // load case Germany GE
+        case 9:
+        b_flag = Ui.loadResource(Rez.Drawables.ge);
+        break;
+
+        // load case Japan JP
+        case 10:
+        b_flag = Ui.loadResource(Rez.Drawables.jp);
+        break;
+
+        // load case Norway NO
+        case 11:
+        b_flag = Ui.loadResource(Rez.Drawables.no);
+        break;
+
+        // load case South Africa SA
+        case 12:
+        b_flag = Ui.loadResource(Rez.Drawables.sa);
+        break;
+
+        // load case United Kingdom UK
+        case 13:
         b_flag = Ui.loadResource(Rez.Drawables.uk);
         break;
 
-        case 5:
-        b_flag = Ui.loadResource(Rez.Drawables.usa);
+        // load case Belgium BE
+        case 14:
+        b_flag = Ui.loadResource(Rez.Drawables.be);
+        break;
+
+        // load case Chile CL
+        case 15:
+        b_flag = Ui.loadResource(Rez.Drawables.cl);
+        break;
+
+        // load case Greece GR
+        case 16:
+        b_flag = Ui.loadResource(Rez.Drawables.gr);
+        break;
+
+        // load case South Korea KR
+        case 17:
+        b_flag = Ui.loadResource(Rez.Drawables.kr);
+        break;
+
+        // load case Phillipines PH
+        case 18:
+        b_flag = Ui.loadResource(Rez.Drawables.ph);
+        break;
+
+        // load case Singapore SG
+        case 19:
+        b_flag = Ui.loadResource(Rez.Drawables.sg);
+        break;
+
+        // load case United States US
+        case 20:
+        b_flag = Ui.loadResource(Rez.Drawables.us);
+        break;
+
+        // load case Bulgaria BG
+        case 21:
+        b_flag = Ui.loadResource(Rez.Drawables.bg);
+        break;
+
+        // load case Czech Republic CZ
+        case 22:
+        b_flag = Ui.loadResource(Rez.Drawables.cz);
+        break;
+
+        // load case India IN
+        case 23:
+        b_flag = Ui.loadResource(Rez.Drawables.in);
+        break;
+
+        // load case Mexico MX
+        case 24:
+        b_flag = Ui.loadResource(Rez.Drawables.mx);
+        break;
+
+        // load case Poland PL
+        case 25:
+        b_flag = Ui.loadResource(Rez.Drawables.pl);
+        break;
+
+        // load case Spain SP
+        case 26:
+        b_flag = Ui.loadResource(Rez.Drawables.sp);
+        break;
+
+        // load case Vietnam VN
+        case 27:
+        b_flag = Ui.loadResource(Rez.Drawables.vn);
+        break;
+
+        // load case Brazil BR
+        case 28:
+        b_flag = Ui.loadResource(Rez.Drawables.br);
+        break;
+
+        // load case Finland FL
+        case 29:
+        b_flag = Ui.loadResource(Rez.Drawables.fl);
+        break;
+
+        // load case Ireland IR
+        case 30:
+        b_flag = Ui.loadResource(Rez.Drawables.ir);
+        break;
+
+        // load case Malaysia MY
+        case 31:
+        b_flag = Ui.loadResource(Rez.Drawables.my);
+        break;
+
+        // load case Portugal PT
+        case 32:
+        b_flag = Ui.loadResource(Rez.Drawables.pt);
+        break;
+
+        // load case Sweden SW
+        case 33:
+        b_flag = Ui.loadResource(Rez.Drawables.sw);
+        break;
+
+        // load case Uruguay UY
+        case 34:
+        b_flag = Ui.loadResource(Rez.Drawables.uy);
+        break;
+
+        // load case Garmin
+        case 99:
+        b_flag = Ui.loadResource(Rez.Drawables.gm);
         break;
 
         default:
-        b_flag = Ui.loadResource(Rez.Drawables.usa);
+        b_flag = Ui.loadResource(Rez.Drawables.gm);
         break;
 
       }
@@ -154,7 +319,7 @@ class View extends Ui.WatchFace {
       if (Toybox.Graphics has :BufferedBitmap) {
 
           // then create 10 of them ...
-          for (var i=0; i<=10;i++) {
+          for (var i=0; i<=number_of_buffers;i++) {
             var offscreenBuffer;
             offscreenBuffer = new Gfx.BufferedBitmap({
                 :width=>segment_width,
@@ -275,21 +440,21 @@ class View extends Ui.WatchFace {
       dc.clear();
 
       // flag offset is from the center
-      var offset_x = (dw-(segment_width*10))/2;
-      var offset_y = -12+(dh-segment_height)/2;
+      var offset_x = (dw-(segment_width*number_of_buffers))/2;
+      var offset_y = -offset_flag+(dh-segment_height)/2;
 
       // pre-calculated sine wave
       var flag_size = flag.size();
       var flag_offset = 7;
 
       // let's draw each buffered bitmap at each position
-      for (var i=0; i<10;i++) {
+      for (var i=0; i<number_of_buffers; i++) {
         dc.drawBitmap(offset_x+(segment_width*i), offset_y+(flag[(flag_offset+i+current_frame)%flag_size]), buffers[i]);
       }
 
       // draw the field, steps
       dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
-      dc.drawText(dw/2,18,Gfx.FONT_XTINY,field.toString()+" / "+fieldGoal.toString(),Gfx.TEXT_JUSTIFY_CENTER);
+      dc.drawText(dw/2,offset_field,Gfx.FONT_XTINY,field.toString(),Gfx.TEXT_JUSTIFY_CENTER);
 
       var f_minute = dc.getTextWidthInPixels(minute.toString(), f_time_light);
       var f_hour = dc.getTextWidthInPixels(hour.toString(), f_time_bold);
@@ -297,9 +462,9 @@ class View extends Ui.WatchFace {
 
       // draw time
       dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
-      dc.drawText(f_start, 150+6, f_time_bold, hour.toString(), Gfx.TEXT_JUSTIFY_LEFT);
+      dc.drawText(f_start, offset_time+6, f_time_bold, hour.toString(), Gfx.TEXT_JUSTIFY_LEFT);
       dc.setColor(0xffffff, Gfx.COLOR_TRANSPARENT);
-      dc.drawText(f_start+f_hour, 150+11, f_time_light, minute.toString(), Gfx.TEXT_JUSTIFY_LEFT);
+      dc.drawText(f_start+f_hour, offset_time+11, f_time_light, minute.toString(), Gfx.TEXT_JUSTIFY_LEFT);
 
       current_frame++;
 

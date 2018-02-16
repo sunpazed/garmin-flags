@@ -5,11 +5,40 @@
   <string id="ThemeTitle">Theme</string>
   <string id="ThemePrompt">Select the flag theme</string>
 
+  <string id="THEME_AR">Argentina</string>
+  <string id="THEME_CA">Canada</string>
+  <string id="THEME_FR">France</string>
+  <string id="THEME_IT">Italy</string>
+  <string id="THEME_NL">Netherlands</string>
+  <string id="THEME_RU">Russia</string>
+  <string id="THEME_TH">Thailand</string>
   <string id="THEME_AU">Australia</string>
-  <string id="THEME_CZ">Czech</string>
+  <string id="THEME_CH">Switzerland</string>
+  <string id="THEME_GE">Germany</string>
   <string id="THEME_JP">Japan</string>
+  <string id="THEME_NO">Norway</string>
   <string id="THEME_SA">South Africa</string>
   <string id="THEME_UK">United Kingdom</string>
+  <string id="THEME_BE">Belgium</string>
+  <string id="THEME_CL">Chile</string>
+  <string id="THEME_GR">Greece</string>
+  <string id="THEME_KR">South Korea</string>
+  <string id="THEME_PH">Phillipines</string>
+  <string id="THEME_SG">Singapore</string>
   <string id="THEME_US">United States</string>
+  <string id="THEME_BG">Bulgaria</string>
+  <string id="THEME_CZ">Czech Republic</string>
+  <string id="THEME_IN">India</string>
+  <string id="THEME_MX">Mexico</string>
+  <string id="THEME_PL">Poland</string>
+  <string id="THEME_SP">Spain</string>
+  <string id="THEME_VN">Vietnam</string>
+  <string id="THEME_BR">Brazil</string>
+  <string id="THEME_FL">Finland</string>
+  <string id="THEME_IR">Ireland</string>
+  <string id="THEME_MY">Malaysia</string>
+  <string id="THEME_PT">Portugal</string>
+  <string id="THEME_SW">Sweden</string>
+  <string id="THEME_UY">Uruguay</string>
 
 </strings>

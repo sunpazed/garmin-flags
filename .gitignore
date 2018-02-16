@@ -5,6 +5,7 @@ coverage
 
 # production
 build
+resources/bitmaps/generate
 
 # misc
 .DS_Store
@@ -15,3 +16,4 @@ old
 build.sh
 release.sh
 *.prg
+*-settings.json

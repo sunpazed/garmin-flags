@@ -2,12 +2,42 @@
 
     <drawables>
       <bitmap id="LauncherIcon" filename="bitmaps/launcher_icon.png" />
-      <bitmap id="usa" filename="bitmaps/flag-usa.png" />
-      <bitmap id="australia" filename="bitmaps/flag-australia.png" />
-      <bitmap id="uk" filename="bitmaps/flag-uk.png" />
-      <bitmap id="japan" filename="bitmaps/flag-japan.png" />
-      <bitmap id="southafrica" filename="bitmaps/flag-sa.png" />
-      <bitmap id="czech" filename="bitmaps/flag-cz.png" />
+      <bitmap id="ar" filename="bitmaps/flag-ar.png"/>
+      <bitmap id="ca" filename="bitmaps/flag-ca.png"/>
+      <bitmap id="fr" filename="bitmaps/flag-fr.png"/>
+      <bitmap id="it" filename="bitmaps/flag-it.png"/>
+      <bitmap id="nl" filename="bitmaps/flag-nl.png"/>
+      <bitmap id="ru" filename="bitmaps/flag-ru.png"/>
+      <bitmap id="th" filename="bitmaps/flag-th.png"/>
+      <bitmap id="au" filename="bitmaps/flag-au.png"/>
+      <bitmap id="ch" filename="bitmaps/flag-ch.png"/>
+      <bitmap id="ge" filename="bitmaps/flag-ge.png"/>
+      <bitmap id="jp" filename="bitmaps/flag-jp.png"/>
+      <bitmap id="no" filename="bitmaps/flag-no.png"/>
+      <bitmap id="sa" filename="bitmaps/flag-sa.png"/>
+      <bitmap id="uk" filename="bitmaps/flag-uk.png"/>
+      <bitmap id="be" filename="bitmaps/flag-be.png"/>
+      <bitmap id="cl" filename="bitmaps/flag-cl.png"/>
+      <bitmap id="gr" filename="bitmaps/flag-gr.png"/>
+      <bitmap id="kr" filename="bitmaps/flag-kr.png"/>
+      <bitmap id="ph" filename="bitmaps/flag-ph.png"/>
+      <bitmap id="sg" filename="bitmaps/flag-sg.png"/>
+      <bitmap id="us" filename="bitmaps/flag-us.png"/>
+      <bitmap id="bg" filename="bitmaps/flag-bg.png"/>
+      <bitmap id="cz" filename="bitmaps/flag-cz.png"/>
+      <bitmap id="in" filename="bitmaps/flag-in.png"/>
+      <bitmap id="mx" filename="bitmaps/flag-mx.png"/>
+      <bitmap id="pl" filename="bitmaps/flag-pl.png"/>
+      <bitmap id="sp" filename="bitmaps/flag-sp.png"/>
+      <bitmap id="vn" filename="bitmaps/flag-vn.png"/>
+      <bitmap id="br" filename="bitmaps/flag-br.png"/>
+      <bitmap id="fl" filename="bitmaps/flag-fl.png"/>
+      <bitmap id="ir" filename="bitmaps/flag-ir.png"/>
+      <bitmap id="my" filename="bitmaps/flag-my.png"/>
+      <bitmap id="pt" filename="bitmaps/flag-pt.png"/>
+      <bitmap id="sw" filename="bitmaps/flag-sw.png"/>
+      <bitmap id="uy" filename="bitmaps/flag-uy.png"/>
+      <bitmap id="gm" filename="bitmaps/flag-gm.png"/>
     </drawables>
 
     <fonts>

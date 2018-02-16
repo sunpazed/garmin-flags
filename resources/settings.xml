@@ -1,18 +1,47 @@
 <resources>
 
 <properties>
-  <property id="theme" type="number">5</property>
+  <property id="theme" type="number">99</property>
 </properties>
 
 <settings>
     <setting propertyKey="@Properties.theme" title="@Strings.ThemeTitle" prompt="@Strings.ThemePrompt">
       <settingConfig type="list">
-          <listEntry value="0">@Strings.THEME_AU</listEntry>
-          <listEntry value="1">@Strings.THEME_CZ</listEntry>
-          <listEntry value="2">@Strings.THEME_JP</listEntry>
-          <listEntry value="3">@Strings.THEME_SA</listEntry>
-          <listEntry value="4">@Strings.THEME_UK</listEntry>
-          <listEntry value="5">@Strings.THEME_US</listEntry>
+        <listEntry value="0">@Strings.THEME_AR</listEntry>
+        <listEntry value="7">@Strings.THEME_AU</listEntry>
+        <listEntry value="14">@Strings.THEME_BE</listEntry>
+        <listEntry value="28">@Strings.THEME_BR</listEntry>
+        <listEntry value="21">@Strings.THEME_BG</listEntry>
+        <listEntry value="1">@Strings.THEME_CA</listEntry>
+        <listEntry value="15">@Strings.THEME_CL</listEntry>
+        <listEntry value="22">@Strings.THEME_CZ</listEntry>
+        <listEntry value="29">@Strings.THEME_FL</listEntry>
+        <listEntry value="2">@Strings.THEME_FR</listEntry>
+        <listEntry value="9">@Strings.THEME_GE</listEntry>
+        <listEntry value="16">@Strings.THEME_GR</listEntry>
+        <listEntry value="23">@Strings.THEME_IN</listEntry>
+        <listEntry value="30">@Strings.THEME_IR</listEntry>
+        <listEntry value="3">@Strings.THEME_IT</listEntry>
+        <listEntry value="10">@Strings.THEME_JP</listEntry>
+        <listEntry value="31">@Strings.THEME_MY</listEntry>
+        <listEntry value="24">@Strings.THEME_MX</listEntry>
+        <listEntry value="4">@Strings.THEME_NL</listEntry>
+        <listEntry value="11">@Strings.THEME_NO</listEntry>
+        <listEntry value="18">@Strings.THEME_PH</listEntry>
+        <listEntry value="25">@Strings.THEME_PL</listEntry>
+        <listEntry value="32">@Strings.THEME_PT</listEntry>
+        <listEntry value="5">@Strings.THEME_RU</listEntry>
+        <listEntry value="19">@Strings.THEME_SG</listEntry>
+        <listEntry value="12">@Strings.THEME_SA</listEntry>
+        <listEntry value="17">@Strings.THEME_KR</listEntry>
+        <listEntry value="26">@Strings.THEME_SP</listEntry>
+        <listEntry value="33">@Strings.THEME_SW</listEntry>
+        <listEntry value="8">@Strings.THEME_CH</listEntry>
+        <listEntry value="6">@Strings.THEME_TH</listEntry>
+        <listEntry value="13">@Strings.THEME_UK</listEntry>
+        <listEntry value="20">@Strings.THEME_US</listEntry>
+        <listEntry value="34">@Strings.THEME_UY</listEntry>
+        <listEntry value="27">@Strings.THEME_VN</listEntry>
       </settingConfig>
     </setting>
 </settings>
